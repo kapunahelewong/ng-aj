@@ -5,13 +5,14 @@ import { BuilderModule } from '@builder.io/angular';
 
 import { AppComponent, CustomThing } from './app.component';
 import { FooComponent } from './foo.component';
+import { WithchildrenComponent } from './withchildren/withchildren.component';
 
 @NgModule({
-  declarations: [AppComponent, FooComponent, CustomThing],
-  entryComponents: [CustomThing],
+  declarations: [AppComponent, FooComponent, CustomThing, WithchildrenComponent],
+  entryComponents: [ WithchildrenComponent],
   imports: [
     BrowserModule,
-    BuilderModule.forRoot('1f3bf1d766354f32ba70dde440fcef97'),
+    BuilderModule.forRoot('f256dd56078448c49674160f604558ef'),
     RouterModule.forRoot([
       {
         path: '**',
